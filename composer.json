@@ -1,5 +1,5 @@
 {
-  "name": "simps/mqtt",
+  "name": "alextend/mqtt",
   "description": "MQTT Protocol Analysis and Coroutine Client for PHP",
   "keywords": [
     "php",
