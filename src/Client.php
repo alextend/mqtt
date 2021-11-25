@@ -12,12 +12,12 @@ declare(strict_types=1);
  */
 namespace Simps\MQTT;
 
+use Swoole\Coroutine;
+use Simps\MQTT\Tools\Common;
+use Simps\MQTT\Hex\ReasonCode;
 use Simps\MQTT\Config\ClientConfig;
 use Simps\MQTT\Exception\ConnectException;
 use Simps\MQTT\Exception\ProtocolException;
-use Simps\MQTT\Hex\ReasonCode;
-use Simps\MQTT\Tools\Common;
-use Swoole\Coroutine;
 
 class Client
 {
@@ -36,9 +36,9 @@ class Client
 
     private $clientType;
 
-    public const COROUTINE_CLIENT_TYPE = 1;
+    const COROUTINE_CLIENT_TYPE = 1;
 
-    public const SYNC_CLIENT_TYPE = 2;
+    const SYNC_CLIENT_TYPE = 2;
 
     public function __construct(
         string $host,
@@ -297,7 +297,7 @@ class Client
         return $this->config;
     }
 
-    public function getConnectData(?string $key = null)
+    public function getConnectData($key = null)
     {
         if ($key) {
             if (isset($this->connectData[$key])) {

@@ -17,95 +17,95 @@ namespace Simps\MQTT\Hex;
  */
 abstract class ReasonCode
 {
-    public const SUCCESS = 0x00;
+    const SUCCESS = 0x00;
 
-    public const NORMAL_DISCONNECTION = 0x00;
+    const NORMAL_DISCONNECTION = 0x00;
 
-    public const GRANTED_QOS_0 = 0x00;
+    const GRANTED_QOS_0 = 0x00;
 
-    public const GRANTED_QOS_1 = 0x01;
+    const GRANTED_QOS_1 = 0x01;
 
-    public const GRANTED_QOS_2 = 0x02;
+    const GRANTED_QOS_2 = 0x02;
 
-    public const DISCONNECT_WITH_WILL_MESSAGE = 0x04;
+    const DISCONNECT_WITH_WILL_MESSAGE = 0x04;
 
-    public const NO_MATCHING_SUBSCRIBERS = 0x10;
+    const NO_MATCHING_SUBSCRIBERS = 0x10;
 
-    public const NO_SUBSCRIPTION_EXISTED = 0x11;
+    const NO_SUBSCRIPTION_EXISTED = 0x11;
 
-    public const CONTINUE_AUTHENTICATION = 0x18;
+    const CONTINUE_AUTHENTICATION = 0x18;
 
-    public const RE_AUTHENTICATE = 0x19;
+    const RE_AUTHENTICATE = 0x19;
 
-    public const UNSPECIFIED_ERROR = 0x80;
+    const UNSPECIFIED_ERROR = 0x80;
 
-    public const MALFORMED_PACKET = 0x81;
+    const MALFORMED_PACKET = 0x81;
 
-    public const PROTOCOL_ERROR = 0x82;
+    const PROTOCOL_ERROR = 0x82;
 
-    public const IMPLEMENTATION_SPECIFIC_ERROR = 0x83;
+    const IMPLEMENTATION_SPECIFIC_ERROR = 0x83;
 
-    public const UNSUPPORTED_PROTOCOL_VERSION = 0x84;
+    const UNSUPPORTED_PROTOCOL_VERSION = 0x84;
 
-    public const CLIENT_IDENTIFIER_NOT_VALID = 0x85;
+    const CLIENT_IDENTIFIER_NOT_VALID = 0x85;
 
-    public const BAD_USER_NAME_OR_PASSWORD = 0x86;
+    const BAD_USER_NAME_OR_PASSWORD = 0x86;
 
-    public const NOT_AUTHORIZED = 0x87;
+    const NOT_AUTHORIZED = 0x87;
 
-    public const SERVER_UNAVAILABLE = 0x88;
+    const SERVER_UNAVAILABLE = 0x88;
 
-    public const SERVER_BUSY = 0x89;
+    const SERVER_BUSY = 0x89;
 
-    public const BANNED = 0x8A;
+    const BANNED = 0x8A;
 
-    public const SERVER_SHUTTING_DOWN = 0x8B;
+    const SERVER_SHUTTING_DOWN = 0x8B;
 
-    public const BAD_AUTHENTICATION_METHOD = 0x8C;
+    const BAD_AUTHENTICATION_METHOD = 0x8C;
 
-    public const KEEP_ALIVE_TIMEOUT = 0x8D;
+    const KEEP_ALIVE_TIMEOUT = 0x8D;
 
-    public const SESSION_TAKEN_OVER = 0x8E;
+    const SESSION_TAKEN_OVER = 0x8E;
 
-    public const TOPIC_FILTER_INVALID = 0x8F;
+    const TOPIC_FILTER_INVALID = 0x8F;
 
-    public const TOPIC_NAME_INVALID = 0x90;
+    const TOPIC_NAME_INVALID = 0x90;
 
-    public const PACKET_IDENTIFIER_IN_USE = 0x91;
+    const PACKET_IDENTIFIER_IN_USE = 0x91;
 
-    public const PACKET_IDENTIFIER_NOT_FOUND = 0x92;
+    const PACKET_IDENTIFIER_NOT_FOUND = 0x92;
 
-    public const RECEIVE_MAXIMUM_EXCEEDED = 0x93;
+    const RECEIVE_MAXIMUM_EXCEEDED = 0x93;
 
-    public const TOPIC_ALIAS_INVALID = 0x94;
+    const TOPIC_ALIAS_INVALID = 0x94;
 
-    public const PACKET_TOO_LARGE = 0x95;
+    const PACKET_TOO_LARGE = 0x95;
 
-    public const MESSAGE_RATE_TOO_HIGH = 0x96;
+    const MESSAGE_RATE_TOO_HIGH = 0x96;
 
-    public const QUOTA_EXCEEDED = 0x97;
+    const QUOTA_EXCEEDED = 0x97;
 
-    public const ADMINISTRATIVE_ACTION = 0x98;
+    const ADMINISTRATIVE_ACTION = 0x98;
 
-    public const PAYLOAD_FORMAT_INVALID = 0x99;
+    const PAYLOAD_FORMAT_INVALID = 0x99;
 
-    public const RETAIN_NOT_SUPPORTED = 0x9A;
+    const RETAIN_NOT_SUPPORTED = 0x9A;
 
-    public const QOS_NOT_SUPPORTED = 0x9B;
+    const QOS_NOT_SUPPORTED = 0x9B;
 
-    public const USE_ANOTHER_SERVER = 0x9C;
+    const USE_ANOTHER_SERVER = 0x9C;
 
-    public const SERVER_MOVED = 0x9D;
+    const SERVER_MOVED = 0x9D;
 
-    public const SHARED_SUBSCRIPTIONS_NOT_SUPPORTED = 0x9E;
+    const SHARED_SUBSCRIPTIONS_NOT_SUPPORTED = 0x9E;
 
-    public const CONNECTION_RATE_EXCEEDED = 0x9F;
+    const CONNECTION_RATE_EXCEEDED = 0x9F;
 
-    public const MAXIMUM_CONNECT_TIME = 0xA0;
+    const MAXIMUM_CONNECT_TIME = 0xA0;
 
-    public const SUBSCRIPTION_IDENTIFIERS_NOT_SUPPORTED = 0xA1;
+    const SUBSCRIPTION_IDENTIFIERS_NOT_SUPPORTED = 0xA1;
 
-    public const WILDCARD_SUBSCRIPTIONS_NOT_SUPPORTED = 0xA2;
+    const WILDCARD_SUBSCRIPTIONS_NOT_SUPPORTED = 0xA2;
 
     /**
      * @see https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901079
